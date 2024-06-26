@@ -1,6 +1,8 @@
 //https://www.naukri.com/code360/problems/painter-s-partition-problem_1089557?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=SUBMISSION
 #include<iostream>
 #include<vector>
+#include<numeric>
+#include<algorithm>
 using namespace std;
 
 int canPaint(vector<int> &boards, int k, int mid){
