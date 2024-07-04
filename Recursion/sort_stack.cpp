@@ -1,6 +1,7 @@
 //https://www.naukri.com/code360/problems/sort-a-stack_985275?leftPanelTabValue=SUBMISSION
 #include<iostream>
 #include<vector>
+#include<stack>
 using namespace std;
 
 void sortedInsert(stack<int> &stack, int x){
