@@ -44,7 +44,6 @@ public:
     int cherryPickup(vector<vector<int>>& grid) {
         int dp[51][51][51];
         int n=grid.size();
-        vector<vector<vector<int>>>dp(n, vector<int>(vector<int>(n, -1)));
         return max(0 , func(0,0,0,n , grid));
     }
 };

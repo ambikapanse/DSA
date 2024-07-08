@@ -1,6 +1,7 @@
 //https://leetcode.com/problems/partition-equal-subset-sum/
 #include<iostream>
 #include<vector>
+#include<numeric>
 using namespace std;
 
 class Solution {
