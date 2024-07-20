@@ -1,0 +1,10 @@
+1. Right shift by k bits: num>>=k
+2. Left shift by k bits: num<<=k
+3. To check if last bit is 0/1: num&1 == 0 => last bit is 0
+4. To check if kth bit is 0/1: num&(1<<k) == 0 => kth bit is 0
+5. No. of 1 in binary representation of x: __builtin_popcount(x) in time O(1)
+6. No. of 1 in an even no. i = No. of 1 in i/2
+7. No. of 1 in an odd no. i = No. of 1 in i/2 + 1
+8. For questions of type: find max of xor/and/or, solve it bit by bit
+9. To set ith bit 1: start with x=0, then do x^(1<<i)
+10. If a num<2**50 => it requires 50 bits for representation
