@@ -8,3 +8,5 @@
 8. For questions of type: find max of xor/and/or, solve it bit by bit
 9. To set ith bit 1: start with x=0, then do x^(1<<i)
 10. If a num<2**50 => it requires 50 bits for representation
+11. To clear (make 0) the right most set bit (1) of n: n & (n-1)
+12. TO check if n is power of 2: n&(n-1)==0
