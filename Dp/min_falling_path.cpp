@@ -29,19 +29,6 @@ int minFallingPathSum(vector<vector<int>>& matrix) {
 //tabulation
 class Solution {
 public:
-    int rec(vector<vector<int>>& matrix, int i, int j){
-        //base case
-        if(i==matrix.size()-1){
-            return matrix[i][j];
-        }
-        int ldiagonal=1e9, rdiagonal=1e9;
-        int down = rec(matrix, i+1, j) + matrix[i][j];
-        if(j-1>=0) ldiagonal = rec(matrix, i+1, j-1) + matrix[i][j];
-        if(j+1<matrix.size()) rdiagonal = rec(matrix, i+1, j+1) + matrix[i][j];
-
-        return min(rdiagonal, min(down, ldiagonal));
-    }
-
     int minFallingPathSum(vector<vector<int>>& matrix) {
         int n = matrix.size();
         vector<vector<int>>dp(n,vector<int>(n));
